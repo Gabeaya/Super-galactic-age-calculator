@@ -15,7 +15,7 @@ describe('Calculator', () => {
   test('should correctly return calculated age of given planet', () => {
     expect(calculator.alienAge()).toEqual(47.0525);
   })
-  test('should inform user of how many years they would have left or how many they lived past expectation', () => {
-    expect(calculator.deathYear()).toEqual(40);
+  test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
+    expect(calculator.deathYear()).toEqual(75.284);
   })
 });
