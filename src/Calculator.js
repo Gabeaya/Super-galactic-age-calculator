@@ -8,19 +8,50 @@ export default class Calculator {
     if (this.selectedPlanet === 'MERCURY'){
       let mercuryAge = (this.earthAge * .241);
       return mercuryAge;
-      //return ('You are ' + mercuryAge + ' on Mercury.')
     } else if (this.selectedPlanet === 'VENUS'){
       let venusAge = (this.earthAge * .6164);
       return venusAge;
-      //return ('You are ' + venusAge + ' on Venus.');
     } else if (this.selectedPlanet === 'MARS'){
       let marsAge = (this.earthAge * 1.8821);
       return marsAge;
-      //return ('You are ' + marsAge + ' on Mars.'); 
     } else if (this.selectedPlanet === 'JUPITER'){
       let jupiterAge = (this.earthAge * 12);
       return jupiterAge;
-      //return ('You are ' + jupiterAge + ' on Jupiter.')
+    }
+  }
+  deathYear = () => {
+    if(this.selectedPlanet === 'MERCURY'){
+      if(this.earthAge < this.userLifeExpectancy) {
+        let yearsExpected = ((this.userLifeExpectancy - this.earthAge) * .241);
+        return yearsExpected;
+      } else if(this.earthAge > this.userLifeExpectancy) {
+        let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .241);
+        return yearsPastExpected;
+      }
+    } else if(this.selectedPlanet === 'VENUS'){
+      if(this.earthAge < this.userLifeExpectancy) {
+        let yearsExpected = ((this.userLifeExpectancy - this.earthAge) * .6164);
+        return yearsExpected;
+      } else if(this.earthAge > this.userLifeExpectancy) {
+        let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .6164);
+        return yearsPastExpected;
+      }
+    } else if(this.selectedPlanet === 'MARS'){
+      if(this.earthAge < this.userLifeExpectancy) {
+        let yearsExpected = ((this.userLifeExpectancy - this.earthAge) * 1.8821);
+        return yearsExpected;
+      } else if(this.earthAge > this.userLifeExpectancy) {
+        let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * 1.8821);
+        return yearsPastExpected;
+      }
+    } else if(this.selectedPlanet === 'JUPITER'){
+      if(this.earthAge < this.userLifeExpectancy) {
+        let yearsExpected = ((this.userLifeExpectancy - this.earthAge) * .12);
+        return yearsExpected;
+      } else if(this.earthAge > this.userLifeExpectancy) {
+        let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .12);
+        return yearsPastExpected;
+      }
     }
   }
 }
