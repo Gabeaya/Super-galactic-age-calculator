@@ -27,6 +27,9 @@ export default class Calculator {
       } else if(this.earthAge > this.userLifeExpectancy) {
         let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .241);
         return yearsPastExpected;
+      } else if(this.earthAge === this.userLifeExpectancy) {
+        const warning = "You better watch it bud. You're livin' on borrowed time!";
+        return warning;
       }
     } else if(this.selectedPlanet === 'VENUS'){
       if(this.earthAge < this.userLifeExpectancy) {
@@ -35,6 +38,9 @@ export default class Calculator {
       } else if(this.earthAge > this.userLifeExpectancy) {
         let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .6164);
         return yearsPastExpected;
+      } else if(this.earthAge === this.userLifeExpectancy) {
+        const warning = "You better watch it bud. You're livin' on borrowed time!";
+        return warning;
       }
     } else if(this.selectedPlanet === 'MARS'){
       if(this.earthAge < this.userLifeExpectancy) {
@@ -43,6 +49,9 @@ export default class Calculator {
       } else if(this.earthAge > this.userLifeExpectancy) {
         let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * 1.8821);
         return yearsPastExpected;
+      } else if(this.earthAge === this.userLifeExpectancy) {
+        const warning = "You better watch it bud. You're livin' on borrowed time!";
+        return warning;
       }
     } else if(this.selectedPlanet === 'JUPITER'){
       if(this.earthAge < this.userLifeExpectancy) {
@@ -51,6 +60,9 @@ export default class Calculator {
       } else if(this.earthAge > this.userLifeExpectancy) {
         let yearsPastExpected = ((this.earthAge - this.userLifeExpectancy) * .12);
         return yearsPastExpected;
+      } else if(this.earthAge === this.userLifeExpectancy) {
+        const warning = "You better watch it bud. You're livin' on borrowed time!";
+        return warning;
       }
     }
   }
