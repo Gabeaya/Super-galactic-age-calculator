@@ -1,3 +1,7 @@
 body {
   background-image: url(../../assets/images/space.gif) ;
+  color:rgb(142, 13, 43);
+}
+.planet-page {
+  display: none;
 }
