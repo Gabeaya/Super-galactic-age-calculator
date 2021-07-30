@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Super Galactic </title>
+  <title>Super Galactic</title>
 </head>
 <body>
   <div class="age-page">
@@ -28,16 +28,7 @@
           <input id="name" class="form-control" type="text" placeholder="John Doe">
           <label for="age">Date Of Birth:</label>
           <input id="age" class="form-control" type="date" required>
-          <button class="btn-btn" type="submit">Submit</button>
         </div>
-      </form>
-    </div>
-  </div>
-  <div class="planet-page">
-    <div class="container">
-      <h1>Planets</h1>
-      <p>Select the planet:</p>
-      <form id="userPlanet">
         <div class="form-group">
           <label for="planet">Select Planet</label>
           <select id="planet">
@@ -46,14 +37,15 @@
             <option value="MARS">Mars</option>
             <option value="JUPITER">Jupiter</option>
           </select>
-          <button class="btn-btn" type="submit">Submit Planet</button>
         </div>
+        <button class="btn-btn" type="submit">Submit</button>
       </form>
     </div>
   </div>
   <div class="age-revealer">
     <div class="container">
-
+      <h1>Congradulations <span id="user-name"></span>and Welcome to <span id="selected-planet"></span></h1>
+      <h3>On this planet you are <span id="planet-age"></span> and your life expectancy is <span id="life-expectanchy"></span></h3>
     </div>
   </div>
 </body>
