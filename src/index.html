@@ -1,14 +1,39 @@
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Alien Age Calculator</h1>
-    <p>Enter your age below then select a planet:</p>
-    <div class="form-group">
-      <label for="born">Date Of Birth:</label>
-      <input id="born" class="form-control" type="date">
+  <div class="age-page">
+    <div class="container">
+      <h1>Alien Age Calculator</h1>
+      <p>Enter your name and age below:</p>
+      <form id="userAge">
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input id="name" class="form-control" type="text" placeholder="John Doe">
+          <label for="age">Date Of Birth:</label>
+          <input id="age" class="form-control" type="date" required>
+          <button class="btn-btn" type="button">on to planets</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="planet-page">
+    <div class="container">
+      <h1>Planets</h1>
+      <p>Select the planet:</p>
+      <form>
+        <div class="form-group">
+          <label for="planet">Select Planet</label>
+          <select id="planet">
+            <option value="MERCURY">Mercury</option>
+            <option value="VENUS">Venus</option>
+            <option value="MARS">Mars</option>
+            <option value="JUPITER">Jupiter</option>
+          </select>
+        </div>
+      </form>
     </div>
   </div>
 </body>
