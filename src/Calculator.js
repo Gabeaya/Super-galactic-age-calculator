@@ -2,7 +2,7 @@ export default class Calculator {
   constructor(earthAge, selectedPlanet, userLifeExpectancy) {
     this.earthAge = earthAge;
     this.selectedPlanet = selectedPlanet;
-    this.userLifeExpectancy = 75;
+    this.userLifeExpectancy = userLifeExpectancy;
   }
   alienAge = () => {
     if (this.selectedPlanet === 'MERCURY'){
