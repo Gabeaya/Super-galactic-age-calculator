@@ -2,18 +2,25 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
+import Calculator from '../src/Calculator.js';
 
-
-$("form#userAge").submit(function(e) {
+$("form#user-info").submit(function(e) {
   e.preventDefault();
   const parseAge = parseInt($("#age").val());
   const name = $("#name").val();
-  const age = (2021-parseAge);
-  const planet = $("#planet").val();
+  const earthAge = (2021-parseAge);
+  const selectedPlanet = $("#planet").val();
+  const userLifeExpectancy = 75;
+  const calculator = new Calculator(earthAge, selectedPlanet, userLifeExpectancy);
+  const planetAge = calculator.alienAge();
+  const planetLifeExpectancy = calculator.deathYear();
   $(".user-info").hide();
   $(".age-revealer").show();
-  $("#user-name").text(name)
-  $("#selected-planet").text(planet);
+  $("#user-name").text(name);
+  $("#selected-planet").text(selectedPlanet);
+  $("#planet-age").text(planetAge);
+  $("#life-expectancy").text(planetLifeExpectancy);
+
 });
   
   
