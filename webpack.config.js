@@ -35,6 +35,12 @@ module.exports = {
         loader: "eslint-loader"
       },
       {
+        test:/\.html$/,
+        use: [
+          'html-loader'
+        ]
+      },
+      {
         test: /\.(gif|png|jpe?g)$/,
         use: [
           {
@@ -45,15 +51,7 @@ module.exports = {
             }
           }
         ]
-      },
-      
-      {
-        test:/\.html$/,
-        use: [
-          'html-loader'
-        ]
-      },
-      
+      }, 
     ]
   }
 };
