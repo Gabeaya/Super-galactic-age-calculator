@@ -1,8 +1,8 @@
-# (Rick's Transporter)
+# Rick's Transporter
 
-#### (super galactic age calculator - O7/31/21 - Code Review OO5
+#### super galactic age calculator - O7/31/21 - Code Review OO5
 
-#### By (Gabriel Ayala)
+#### By Gabriel Ayala
 
 ## Technologies Used :floppy_disk:
 
