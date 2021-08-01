@@ -75,4 +75,8 @@ describe('Calculator', () => {
     let jupiter = new Calculator(3, 'JUPITER', 1);
     expect(jupiter.deathYear()).toEqual(0.16863406408094436);
   });
+  test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
+    let jupiter = new Calculator(3, 'JUPITER', 3);
+    expect(jupiter.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
+  });
 });
