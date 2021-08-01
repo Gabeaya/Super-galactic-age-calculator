@@ -43,4 +43,8 @@ describe('Calculator', () => {
     let mercury = new Calculator(2, 'MERCURY', 2);
     expect(mercury.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
   });
+  test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
+    let venus = new Calculator(1, 'VENUS', 3);
+    expect(venus.deathYear()).toEqual(3.2446463335496434);
+  });
 });
