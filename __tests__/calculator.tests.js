@@ -16,9 +16,13 @@ describe('Calculator', () => {
     expect(calculator.selectedPlanet).toEqual('');
     expect(calculator.userLifeExpectancy).toEqual('');
   });
-  test('should correctly return calculated age of planet a person on Mars', () => {
+  test('should correctly return calculated age of a person on Mars', () => {
     expect(marsCalculator.alienAge()).toEqual(39.84910472344721);
-  })
+  });
+  test('should correctly return calculated age of a person on Mercury', () => {
+    const mercury = new Calculator(75, 'MERCURY',75);
+    expect(mercury.alienAge()).toEqual(311.2033195020747);
+  });
   test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
     expect(marsCalculator.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
   })
