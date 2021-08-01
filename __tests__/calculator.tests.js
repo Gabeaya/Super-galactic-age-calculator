@@ -23,7 +23,20 @@ describe('Calculator', () => {
     const mercury = new Calculator(75, 'MERCURY',75);
     expect(mercury.alienAge()).toEqual(311.2033195020747);
   });
+  test('should correctly return calculated age of a person on Venus', () => {
+    const venus = new Calculator(20, 'VENUS', 75);
+    expect(venus.alienAge()).toEqual(32.44646333549643)
+  });
+  test('should correctly return calculated age of a person on Jupiter', () => {
+    const jupiter = new Calculator(20, 'JUPITER', 75);
+    expect(jupiter.alienAge()).toEqual(1.6666666666666667);
+  });
   test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
-    expect(marsCalculator.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
-  })
+    let mercury = new Calculator(1, 'MERCURY', 2);
+    expect(mercury.deathYear()).toEqual(4.149377593360996);
+  });
+  test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
+    let mercury = new Calculator(2, 'MERCURY', 1);
+    expect(mercury.deathYear()).toEqual(4.149377593360996);
+  });
 });
