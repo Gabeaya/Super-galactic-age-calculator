@@ -24,7 +24,7 @@ _This web application takes the users name, age, and a planet of their chosing, 
 ## Setup/Installation Requirements :triangular_ruler:
 
 * _Clone github repo: https://github.com/Gabeaya/Super-galactic-age-calculator.git_
-* _Navigate the directory: (cd top name directory)
+* _Navigate the directory: (cd top name directory)_
 * _Open in Vs code: code ._
 * _Run: npm install. This  gets packages and node modules showing_
 * _Run: npm build_
@@ -34,8 +34,8 @@ _This web application takes the users name, age, and a planet of their chosing, 
 
 ## Known Bugs/Future Changes :bug:
 
-* _The UI will be available once the correct loaders are implemented_
-* _User has will eventually have the option to submit a form that determines their life expectancy_
+* _The UI will be available once the correct loaders are implemented._
+* _User has will eventually have the option to submit a form that determines their life expectancy._
 
 ## License :clipboard:
 MIT &copy; 2021 _Gabriel Ayala_
