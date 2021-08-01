@@ -10,10 +10,10 @@
 * _CSS_
 * _VS code_
 * _Bootstrap_
-* _JavaScript
+* _JavaScript_
 * _JQuery 3.6.0_
 * _npm_
-* _Webpack
+* _Webpack_
 * _Jest_
 * _ESLint_
 * _Babel_
