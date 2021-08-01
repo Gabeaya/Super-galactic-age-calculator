@@ -2,20 +2,23 @@ import Calculator from '../src/Calculator.js';
 
 describe('Calculator', () => {
   let calculator;
+  let marsCalculator;
 
   beforeEach(() => {
-    calculator = new Calculator( 75,'MARS', 75);
+    calculator = new Calculator('','','');
+    marsCalculator = new Calculator( 75,'MARS', 75);
+
   });
   
   test('should be able to hold three parameters: given earth age, the selected planet, the users life expectancy', () => {
-    expect(calculator.earthAge).toEqual(75);
-    expect(calculator.selectedPlanet).toEqual('MARS');
-    expect(calculator.userLifeExpectancy).toEqual(75);
+    expect(calculator.earthAge).toEqual('');
+    expect(calculator.selectedPlanet).toEqual('');
+    expect(calculator.userLifeExpectancy).toEqual('');
   });
   test('should correctly return calculated age of given planet', () => {
-    expect(calculator.alienAge()).toEqual(141.1575);
+    expect(marsCalculator.alienAge()).toEqual(39.84910472344721);
   })
   test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
-    expect(calculator.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
+    expect(marsCalculator.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
   })
 });
