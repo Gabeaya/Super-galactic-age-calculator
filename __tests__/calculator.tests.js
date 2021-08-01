@@ -63,5 +63,8 @@ describe('Calculator', () => {
     let mars = new Calculator(3, 'MARS', 1);
     expect(mars.deathYear()).toEqual(1.062642792625259);
   });
-  
+  test('should inform user of how many years they would have left or how many they lived past expectation on a given planet', () => {
+    let mars = new Calculator(3, 'MARS', 3);
+    expect(mars.deathYear()).toEqual("You better watch it bud. You're livin' on borrowed time!");
+  });
 });
