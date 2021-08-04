@@ -4,7 +4,7 @@ export default class Calculator {
     this.selectedPlanet = selectedPlanet;
     this.userLifeExpectancy = userLifeExpectancy;
   }
-  alienAge = () => {
+  alienAge() {
     if (this.selectedPlanet === 'MERCURY'){
       let mercuryAge = Math.floor(this.earthAge / .241);
       return mercuryAge;
@@ -19,7 +19,7 @@ export default class Calculator {
       return jupiterAge;
     }
   }
-  deathYear = () => {
+  deathYear() {
     if(this.selectedPlanet === 'MERCURY'){
       if(this.earthAge < this.userLifeExpectancy) {
         let yearsExpected = Math.floor((this.userLifeExpectancy - this.earthAge) / .241);
